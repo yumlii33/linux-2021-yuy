@@ -2,25 +2,32 @@
 
 ## asciicema 使用
 
-* 安装
+* 安装：`sudo apt update && sudo apt install asciicema`
 
-* 
+* 关联账号：`asciicema auth`
+
+* 开始录制：`asciicema rec rec-1.cast`
+
+* 结束录制：`exit`
+
+* 上传：`asciicema upload rec-1.cast`
+
 
 ## vimtutor 练习记录
 
-[lession 1](https://asciinema.org/a/KsoLl8GSayVT9MZq0QzUWgWpK)
+[lesson 1](https://asciinema.org/a/KsoLl8GSayVT9MZq0QzUWgWpK)
 
-[lession 2](https://asciinema.org/a/V62RGoqE94njq7CO4C0fsSZ5H)
+[lesson 2](https://asciinema.org/a/V62RGoqE94njq7CO4C0fsSZ5H)
 
-[lession 3](https://asciinema.org/a/vJzNivDONlRg9J87pSpxlCtAz)
+[lesson 3](https://asciinema.org/a/vJzNivDONlRg9J87pSpxlCtAz)
 
-[lession 4](https://asciinema.org/a/PrRg17T0Drry9wV5CH7cBxZWc)
+[lesson 4](https://asciinema.org/a/PrRg17T0Drry9wV5CH7cBxZWc)
 
-[lession 5](https://asciinema.org/a/eBUpydeHGP7qdCvANlq6miCia)
+[lesson 5](https://asciinema.org/a/eBUpydeHGP7qdCvANlq6miCia)
 
-[lession 6](https://asciinema.org/a/03uU4u9e5bwL9CWPqiGLNj5FH)
+[lesson 6](https://asciinema.org/a/03uU4u9e5bwL9CWPqiGLNj5FH)
 
-[lession 7](https://asciinema.org/a/cL6SVAMSsV6nyry4mqhEXtcUj)
+[lesson 7](https://asciinema.org/a/cL6SVAMSsV6nyry4mqhEXtcUj)
 
 
 ## vimtutor 完成后的自查清单
