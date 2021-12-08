@@ -1,6 +1,26 @@
 # Linux 命令行使用基础
 
+## asciicema 使用
+
+* 安装
+
+* 
+
 ## vimtutor 练习记录
+
+[lession 1](https://asciinema.org/a/KsoLl8GSayVT9MZq0QzUWgWpK)
+
+[lession 2](https://asciinema.org/a/V62RGoqE94njq7CO4C0fsSZ5H)
+
+[lession 3](https://asciinema.org/a/vJzNivDONlRg9J87pSpxlCtAz)
+
+[lession 4](https://asciinema.org/a/PrRg17T0Drry9wV5CH7cBxZWc)
+
+[lession 5](https://asciinema.org/a/eBUpydeHGP7qdCvANlq6miCia)
+
+[lession 6](https://asciinema.org/a/03uU4u9e5bwL9CWPqiGLNj5FH)
+
+[lession 7](https://asciinema.org/a/cL6SVAMSsV6nyry4mqhEXtcUj)
 
 
 ## vimtutor 完成后的自查清单
@@ -9,7 +29,7 @@
 
 * Normal模式下，从当前行开始，一次向下移动光标10行的操作方法？如何快速移动到文件开始行和结束行？如何快速跳转到文件中的第N行？
 
-    一次向下移动光标10行：
+    一次向下移动光标10行：`+10`+`<ENTER>` 
 
     快速移动到文件开始行：`gg` 或者 `1` + `G`
 
@@ -31,9 +51,15 @@
 
 * 如何在vim中快速插入N个空行？如何在vim中快速输入80个-？
 
-    在vim中快速插入N个空行：
+    * 在vim中快速插入N个空行：
+        `N`+`o`+`<ESC>`
+        或者
+        `N`+`O`+`<ESC>`
 
-    在vim中快速输入80个-：
+    * 在vim中快速输入80个-：
+        `80`+`i`+`<ESC>`
+        或者
+        `80`+`a`+`<ESC>`
 
 * 如何撤销最近一次编辑操作？如何重做最近一次被撤销的操作？
 
@@ -43,11 +69,11 @@
 
 * vim中如何实现剪切粘贴单个字符？单个单词？单行？如何实现相似的复制粘贴操作呢？
 
-    * 剪切粘贴单个字符：
+    * 剪切粘贴单个字符： `x` + `p`
 
-    * 剪切粘贴单个单词：
+    * 剪切粘贴单个单词： `dw` + `p`
 
-    * 剪切粘贴单行：
+    * 剪切粘贴单行： `dd` + `p`
 
     * 复制粘贴单个字符：
         把光标放到待复制的字符前，按下 `vy`
@@ -60,10 +86,10 @@
         把光标移动到待粘贴的位置，按下 `p`   
 
     * 复制粘贴单个单词：
-        把光标放在待复制的单词前,按下 `yw`   
+        把光标放在待复制的单词前,按下 `vey`   
         把光标移动到待粘贴的位置，按下 `p`
         或者
-        把光标放在待复制的单词前,按下 `vey`   
+        把光标放在待复制的单词前,按下 `yw`   
         把光标移动到待粘贴的位置，按下 `p`
 
     * 复制粘贴单行：
@@ -71,6 +97,23 @@
         把光标移动到待粘贴的位置，按下 `p`
 
 * 为了编辑一段文本你能想到哪几种操作方式（按键序列）？
+
+    * 行后附加内容：
+        `A`
+        输入内容
+        `<ESC>`
+    
+    * 删除内容：
+        删除行：`dd`
+        删除单词：`dw`
+    
+    * 修改错误单词：
+        跳转到要修改的位置，`j/k/h/l/w`
+        `ce`
+        输入正确的
+        `<ESC>`
+        
+        
 
 * 查看当前正在编辑的文件名的方法？查看当前光标所在行的行号的方法？
 
@@ -107,6 +150,9 @@
 
 * 在文件中最近编辑过的位置来回快速跳转的方法？
 
+    * `goes back` : `CTRL-O`
+    * `goes forward` : `CTRL-I`
+
 * 如何把光标定位到各种括号的匹配项？例如：找到(, [, or {对应匹配的),], or }
 
     首先将光标放到待匹配的括号处  
@@ -121,4 +167,10 @@
 
 * 如何使用vim的内置帮助系统来查询一个内置默认快捷键的使用方法？如何在两个不同的分屏窗口中移动光标？
 
+    * 使用vim的内置帮助系统来查询一个内置默认快捷键的使用方法：`:help command`+`<ENTER>`
+
+    * 在两个不同的分屏窗口中移动光标：`CTRL`+`W`
+
 ## 参考链接
+
+* [How it works - asciinema](https://asciinema.org/docs/how-it-works)
